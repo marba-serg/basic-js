@@ -14,6 +14,9 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function createDreamTeam(members) {
+  if (!Array.isArray(members)) {
+    return false
+  }
   let arrStr = members.filter(el => typeof(el)==='string')
   let dream = arrStr.sort().map(el => el[0]).join('')
     return dream
