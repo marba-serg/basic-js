@@ -12,11 +12,13 @@ const { NotImplementedError } = require('../extensions/index.js');
  * 
  */
 function getSeason(date) {
-  let arr = date.toLocaleDateString().split('/')
-  if (!date) {
+  let month = date.getMonth()
+    if (!date) {
     return 'Unable to determine the time of year!'
-  }  
-    switch (+arr[0]) {
+  }
+ 
+    
+    switch (month) {
         case 0:
         case 1:
         case 11:
