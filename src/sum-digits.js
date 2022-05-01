@@ -17,9 +17,8 @@ function getSumOfDigits(n) {
 do
   (sum = sum.toString().split("").reduce((a, b) => Number(a) + Number(b)))
   while
-    (String(sum).length > 2) {
+    (String(sum).length > 2)
     
-  }
   return sum;
 }
 
