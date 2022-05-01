@@ -12,9 +12,9 @@ const { NotImplementedError } = require('../extensions/index.js');
  */
 function getEmailDomain( email ) {
   let arr =  email.split('@')
-  return arr[1]
+  arr.reverse()
+  return arr[0]
 }
-
 module.exports = {
   getEmailDomain
 };
