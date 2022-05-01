@@ -22,7 +22,7 @@ function dateSample(sampleActivity) {
   if ( 
       isNaN(sampleActivity) || 
       Number(sampleActivity) <= 0 || 
-      Number(sampleActivity) > 15 || typeof(sampleActivity) !== 'string' || !sampleActivity) {
+      Number(sampleActivity) > 15 || typeof(sampleActivity) != 'string' || !sampleActivity) {
     return false;
   } else {
     result = Math.ceil(Math.log(MODERN_ACTIVITY / Number(sampleActivity)) / (0.693 / HALF_LIFE_PERIOD));
