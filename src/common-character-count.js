@@ -16,7 +16,7 @@ function getCommonCharacterCount(s1, s2) {
   s1.split("").forEach((el) => {
     if (s2.indexOf(el)!=-1) {
       number++;
-      s2 = s2.replace(el, "0");
+      s2 = s2.replace(el, "");
     }
   });
   return number;
