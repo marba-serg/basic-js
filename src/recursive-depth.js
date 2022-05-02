@@ -17,7 +17,7 @@ class DepthCalculator {
     if (!array.some(el => Array.isArray(el))) {
       return depthNum
     } else {
-      return this.calculateDepthArr(arr.flat(), ++depthNum)
+      return this.calculateDepthArr(array.flat(), ++depthNum)
     }
   }
 }
