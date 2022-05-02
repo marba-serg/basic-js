@@ -18,7 +18,7 @@ function createDreamTeam(members) {
     return false
   }
   let arrStr = members.filter(el => typeof(el)==='string')
-  let dream = arrStr.sort().map(el => el[0]).join('').toUpperCase()
+  let dream = arrStr.sort().map(el => el.trimStart().[0]).join('').toUpperCase()
     return dream
 }
 
