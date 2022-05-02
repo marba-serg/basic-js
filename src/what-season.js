@@ -17,7 +17,7 @@ function getSeason(date) {
     return 'Unable to determine the time of year!'
   }
  
-    
+try{    
     switch (month) {
         case 0:
         case 1:
@@ -36,7 +36,10 @@ function getSeason(date) {
         case 10:
           return "autumn";
       }
-  
+  catch (error) {
+    throw new Error('Invalid date!')
+  }
+
 }
 
 module.exports = {
